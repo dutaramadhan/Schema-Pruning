@@ -1,0 +1,12 @@
+Benchmark Summary V2 (embedding_mkp, top_k=30)
+num_samples: 1534
+top_k: 30
+mean_precision: 0.149028
+mean_recall: 0.956118
+mean_f1: 0.247674
+mean_f6: 0.780151
+mean_reduction_ratio: 0.444777
+total_full_recall: 1297
+method: embedding_mkp
+retriever_backend: hybrid
+lexical_weight: 0.500000

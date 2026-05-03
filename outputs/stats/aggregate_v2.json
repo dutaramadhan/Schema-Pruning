@@ -1,0 +1,15 @@
+{
+  "num_samples": 50,
+  "top_k": 20,
+  "mean_precision": 0.17226802183323922,
+  "mean_recall": 0.7740079365079365,
+  "mean_f1": 0.27817967173312,
+  "mean_f6": 0.701019327295654,
+  "mean_reduction_ratio": 0.7498876404494382,
+  "retriever_backend": "hybrid",
+  "lexical_weight": 0.3,
+  "use_evidence": true,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "preserve_mandatory_keys": true
+}

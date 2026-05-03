@@ -1,0 +1,7 @@
+# Core
+numpy>=1.23
+sentence-transformers>=2.2
+
+# Optional vector stores
+faiss-cpu>=1.7
+chromadb>=0.4

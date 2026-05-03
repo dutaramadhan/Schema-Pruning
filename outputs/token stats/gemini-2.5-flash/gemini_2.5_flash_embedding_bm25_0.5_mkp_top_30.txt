@@ -1,0 +1,13 @@
+Total questions: 1534
+Total prompt tokens: 895611
+Total output tokens: 95085
+Total tokens (prompt+output): 990696
+Total API total tokens: 1391088
+Total thinking tokens: 400392
+Total tool prompt tokens: 0
+Avg tokens/question: 645.8252933507171
+Avg prompt tokens/question: 583.8402868318123
+Avg output tokens/question: 61.985006518904825
+Avg thinking tokens/question: 261.0117340286832
+Avg tool prompt tokens/question: 0.0
+Avg API total tokens/question: 906.8370273794003

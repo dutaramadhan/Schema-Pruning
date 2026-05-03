@@ -1,0 +1,10 @@
+Benchmark Summary V2 (fullschema, top_k=all)
+num_samples: 1534
+top_k: all
+mean_precision: 0.098977
+mean_recall: 1.000000
+mean_f1: 0.166375
+mean_f6: 0.679806
+mean_reduction_ratio: 0.000000
+total_full_recall: 1534
+method: fullschema

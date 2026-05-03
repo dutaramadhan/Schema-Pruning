@@ -1,0 +1,14 @@
+﻿Benchmark Summary V2
+num_samples: 50
+top_k: 20
+mean_precision: 0.172268
+mean_recall: 0.774008
+mean_f1: 0.278180
+mean_f6: 0.701019
+mean_reduction_ratio: 0.749888
+retriever_backend: hybrid
+lexical_weight: 0.300000
+use_evidence: True
+bm25_k1: 1.500000
+bm25_b: 0.750000
+preserve_mandatory_keys: True
