@@ -1,0 +1,7 @@
+Total questions: 1534
+Total prompt tokens: 715860
+Total output tokens: 67868
+Total tokens: 783728
+Avg tokens/question: 510.90482398956976
+Avg prompt tokens/question: 466.66232073011736
+Avg output tokens/question: 44.24250325945241
