@@ -1,0 +1,137 @@
+{
+  "total": 1534,
+  "correct": 754,
+  "wrong": 780,
+  "accuracy": 49.15,
+  "full_recall_samples": 973,
+  "full_recall_rate": 63.43,
+  "correct_with_missing_gold": 96,
+  "wrong_with_missing_gold": 465,
+  "wrong_without_missing_gold": 315,
+  "error_group_counts": {
+    "correct": 754,
+    "generation_error_or_sql_logic": 298,
+    "pruning_missing_gold_column": 465,
+    "sql_execution_error": 17
+  },
+  "by_difficulty": {
+    "challenging": {
+      "total": 145,
+      "correct": 53,
+      "accuracy": 36.55,
+      "full_recall": 77,
+      "error_group_counts": {
+        "pruning_missing_gold_column": 59,
+        "correct": 53,
+        "sql_execution_error": 8,
+        "generation_error_or_sql_logic": 25
+      }
+    },
+    "moderate": {
+      "total": 464,
+      "correct": 184,
+      "accuracy": 39.66,
+      "full_recall": 249,
+      "error_group_counts": {
+        "generation_error_or_sql_logic": 91,
+        "pruning_missing_gold_column": 185,
+        "correct": 184,
+        "sql_execution_error": 4
+      }
+    },
+    "simple": {
+      "total": 925,
+      "correct": 517,
+      "accuracy": 55.89,
+      "full_recall": 647,
+      "error_group_counts": {
+        "correct": 517,
+        "pruning_missing_gold_column": 221,
+        "generation_error_or_sql_logic": 182,
+        "sql_execution_error": 5
+      }
+    }
+  },
+  "top_missing_gold_columns": [
+    [
+      "cards.`uuid`",
+      52
+    ],
+    [
+      "Laboratory.`ID`",
+      52
+    ],
+    [
+      "schools.`CDSCode`",
+      51
+    ],
+    [
+      "Player.`player_api_id`",
+      42
+    ],
+    [
+      "Patient.`ID`",
+      41
+    ],
+    [
+      "frpm.`CDSCode`",
+      35
+    ],
+    [
+      "Player_Attributes.`player_api_id`",
+      35
+    ],
+    [
+      "sets.`code`",
+      33
+    ],
+    [
+      "users.`Id`",
+      33
+    ],
+    [
+      "satscores.`cds`",
+      32
+    ],
+    [
+      "Player.`player_name`",
+      32
+    ],
+    [
+      "Examination.`ID`",
+      26
+    ],
+    [
+      "drivers.`forename`",
+      24
+    ],
+    [
+      "foreign_data.`uuid`",
+      22
+    ],
+    [
+      "posts.`Id`",
+      22
+    ],
+    [
+      "circuits.`circuitId`",
+      22
+    ],
+    [
+      "district.`district_id`",
+      21
+    ],
+    [
+      "drivers.`driverId`",
+      21
+    ],
+    [
+      "Team.`team_api_id`",
+      21
+    ],
+    [
+      "legalities.`uuid`",
+      20
+    ]
+  ]
+}

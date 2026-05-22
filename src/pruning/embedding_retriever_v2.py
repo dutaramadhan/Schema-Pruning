@@ -57,11 +57,12 @@ class EmbeddingRetrieverV2:
     def rank_columns(
         self, question: str, schema: DatabaseSchema, evidence: Optional[str] = None
     ) -> List[RankedColumn]:
-        embed_scores = self._embed_scores(question, schema)
+        query_text = self._build_query_text(question, evidence)
+        embed_scores = self._embed_scores(query_text, schema)
         embed_vals = [col.score for col in embed_scores]
         embed_norm = self._min_max_normalize(embed_vals)
 
-        # Embedding-only mode: skip lexical BM25 scoring entirely.
+        # Embedding-only mode uses the same question/evidence query text, but skips BM25.
         if self.lexical_weight == 0.0:
             ranked = [
                 RankedColumn(
@@ -75,7 +76,6 @@ class EmbeddingRetrieverV2:
             ranked.sort(key=lambda x: x.score, reverse=True)
             return ranked
 
-        query_text = self._build_query_text(question, evidence)
         lex_scores = self._lex_scores(query_text, schema)
         lex_vals = [lex_scores.get(col.full_name, 0.0) for col in embed_scores]
         lex_norm = self._min_max_normalize(lex_vals)
@@ -100,16 +100,16 @@ class EmbeddingRetrieverV2:
             return f"{question} {evidence}"
         return question
 
-    def _embed_scores(self, question: str, schema: DatabaseSchema) -> List[RankedColumn]:
+    def _embed_scores(self, query_text: str, schema: DatabaseSchema) -> List[RankedColumn]:
         if self._model is None:
             raise RuntimeError("Sentence-transformers model is not loaded.")
-        return self._embed_scores_transformers(question, schema)
+        return self._embed_scores_transformers(query_text, schema)
 
     def _embed_scores_transformers(
-        self, question: str, schema: DatabaseSchema
+        self, query_text: str, schema: DatabaseSchema
     ) -> List[RankedColumn]:
         column_texts = [self._column_text(col) for col in schema.columns]
-        q_emb = self._model.encode([question], normalize_embeddings=True)[0]
+        q_emb = self._model.encode([query_text], normalize_embeddings=True)[0]
         col_embs = self._model.encode(column_texts, normalize_embeddings=True)
 
         scores: List[RankedColumn] = []

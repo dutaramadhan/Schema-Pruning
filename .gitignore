@@ -218,3 +218,5 @@ __marimo__/
 Dataset/*
 
 /*.txt
+
+docs/*

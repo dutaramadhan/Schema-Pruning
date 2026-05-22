@@ -1,0 +1,52 @@
+{
+  "total": 1534,
+  "correct": 384,
+  "wrong": 1150,
+  "accuracy": 25.03,
+  "full_recall_samples": 1534,
+  "full_recall_rate": 100.0,
+  "correct_with_missing_gold": 0,
+  "wrong_with_missing_gold": 0,
+  "wrong_without_missing_gold": 1150,
+  "error_group_counts": {
+    "correct": 384,
+    "generation_error_or_sql_logic": 619,
+    "sql_execution_error": 531
+  },
+  "by_difficulty": {
+    "challenging": {
+      "total": 145,
+      "correct": 14,
+      "accuracy": 9.66,
+      "full_recall": 145,
+      "error_group_counts": {
+        "sql_execution_error": 86,
+        "generation_error_or_sql_logic": 45,
+        "correct": 14
+      }
+    },
+    "moderate": {
+      "total": 464,
+      "correct": 75,
+      "accuracy": 16.16,
+      "full_recall": 464,
+      "error_group_counts": {
+        "generation_error_or_sql_logic": 203,
+        "sql_execution_error": 186,
+        "correct": 75
+      }
+    },
+    "simple": {
+      "total": 925,
+      "correct": 295,
+      "accuracy": 31.89,
+      "full_recall": 925,
+      "error_group_counts": {
+        "correct": 295,
+        "sql_execution_error": 259,
+        "generation_error_or_sql_logic": 371
+      }
+    }
+  },
+  "top_missing_gold_columns": []
+}

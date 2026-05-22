@@ -1,0 +1,137 @@
+{
+  "total": 1534,
+  "correct": 794,
+  "wrong": 740,
+  "accuracy": 51.76,
+  "full_recall_samples": 1018,
+  "full_recall_rate": 66.36,
+  "correct_with_missing_gold": 102,
+  "wrong_with_missing_gold": 414,
+  "wrong_without_missing_gold": 326,
+  "error_group_counts": {
+    "correct": 794,
+    "generation_error_or_sql_logic": 307,
+    "pruning_missing_gold_column": 414,
+    "sql_execution_error": 19
+  },
+  "by_difficulty": {
+    "challenging": {
+      "total": 145,
+      "correct": 55,
+      "accuracy": 37.93,
+      "full_recall": 83,
+      "error_group_counts": {
+        "pruning_missing_gold_column": 54,
+        "correct": 55,
+        "sql_execution_error": 10,
+        "generation_error_or_sql_logic": 26
+      }
+    },
+    "moderate": {
+      "total": 464,
+      "correct": 201,
+      "accuracy": 43.32,
+      "full_recall": 269,
+      "error_group_counts": {
+        "generation_error_or_sql_logic": 98,
+        "pruning_missing_gold_column": 161,
+        "correct": 201,
+        "sql_execution_error": 4
+      }
+    },
+    "simple": {
+      "total": 925,
+      "correct": 538,
+      "accuracy": 58.16,
+      "full_recall": 666,
+      "error_group_counts": {
+        "correct": 538,
+        "pruning_missing_gold_column": 199,
+        "generation_error_or_sql_logic": 183,
+        "sql_execution_error": 5
+      }
+    }
+  },
+  "top_missing_gold_columns": [
+    [
+      "schools.`CDSCode`",
+      51
+    ],
+    [
+      "cards.`uuid`",
+      50
+    ],
+    [
+      "users.`Id`",
+      46
+    ],
+    [
+      "Player.`player_api_id`",
+      42
+    ],
+    [
+      "frpm.`CDSCode`",
+      35
+    ],
+    [
+      "sets.`code`",
+      34
+    ],
+    [
+      "Laboratory.`ID`",
+      34
+    ],
+    [
+      "satscores.`cds`",
+      32
+    ],
+    [
+      "Player_Attributes.`player_api_id`",
+      31
+    ],
+    [
+      "Player.`player_name`",
+      22
+    ],
+    [
+      "posts.`Id`",
+      21
+    ],
+    [
+      "foreign_data.`uuid`",
+      20
+    ],
+    [
+      "drivers.`surname`",
+      20
+    ],
+    [
+      "Examination.`ID`",
+      20
+    ],
+    [
+      "legalities.`uuid`",
+      19
+    ],
+    [
+      "drivers.`forename`",
+      19
+    ],
+    [
+      "drivers.`driverId`",
+      19
+    ],
+    [
+      "Patient.`ID`",
+      19
+    ],
+    [
+      "races.`name`",
+      16
+    ],
+    [
+      "district.`district_id`",
+      15
+    ]
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "total": 1534,
+  "correct": 936,
+  "wrong": 598,
+  "accuracy": 61.02,
+  "full_recall_samples": 1297,
+  "full_recall_rate": 84.55,
+  "correct_with_missing_gold": 76,
+  "wrong_with_missing_gold": 161,
+  "wrong_without_missing_gold": 437,
+  "error_group_counts": {
+    "correct": 936,
+    "generation_error_or_sql_logic": 418,
+    "pruning_missing_gold_column": 161,
+    "sql_execution_error": 19
+  },
+  "by_difficulty": {
+    "challenging": {
+      "total": 145,
+      "correct": 72,
+      "accuracy": 49.66,
+      "full_recall": 122,
+      "error_group_counts": {
+        "generation_error_or_sql_logic": 47,
+        "correct": 72,
+        "sql_execution_error": 11,
+        "pruning_missing_gold_column": 15
+      }
+    },
+    "moderate": {
+      "total": 464,
+      "correct": 240,
+      "accuracy": 51.72,
+      "full_recall": 378,
+      "error_group_counts": {
+        "generation_error_or_sql_logic": 156,
+        "correct": 240,
+        "pruning_missing_gold_column": 62,
+        "sql_execution_error": 6
+      }
+    },
+    "simple": {
+      "total": 925,
+      "correct": 624,
+      "accuracy": 67.46,
+      "full_recall": 797,
+      "error_group_counts": {
+        "correct": 624,
+        "pruning_missing_gold_column": 84,
+        "generation_error_or_sql_logic": 215,
+        "sql_execution_error": 2
+      }
+    }
+  },
+  "top_missing_gold_columns": [
+    [
+      "Player.`player_name`",
+      22
+    ],
+    [
+      "drivers.`surname`",
+      20
+    ],
+    [
+      "drivers.`forename`",
+      19
+    ],
+    [
+      "races.`name`",
+      16
+    ],
+    [
+      "satscores.`cds`",
+      14
+    ],
+    [
+      "trans.`account`",
+      14
+    ],
+    [
+      "cards.`id`",
+      12
+    ],
+    [
+      "Match.`id`",
+      12
+    ],
+    [
+      "sets.`code`",
+      11
+    ],
+    [
+      "disp.`type`",
+      10
+    ],
+    [
+      "sets.`name`",
+      10
+    ],
+    [
+      "satscores.`NumTstTakr`",
+      9
+    ],
+    [
+      "rulings.`text`",
+      7
+    ],
+    [
+      "Player.`id`",
+      7
+    ],
+    [
+      "rulings.`uuid`",
+      6
+    ],
+    [
+      "circuits.`name`",
+      6
+    ],
+    [
+      "users.`DisplayName`",
+      5
+    ],
+    [
+      "Player_Attributes.`id`",
+      5
+    ],
+    [
+      "satscores.`AvgScrWrite`",
+      4
+    ],
+    [
+      "schools.`AdmLName1`",
+      4
+    ]
+  ]
+}
