@@ -1,6 +1,8 @@
 # Core
 numpy>=1.23
 sentence-transformers>=2.2
+streamlit>=1.32
+pandas>=2.0
 
 # Optional vector stores
 faiss-cpu>=1.7
