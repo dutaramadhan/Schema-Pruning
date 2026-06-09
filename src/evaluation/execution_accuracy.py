@@ -129,14 +129,14 @@ if __name__ == '__main__':
     exec_result = []
 
     # '''for experiment'''
-    predicted_sql_path = r"C:\Users\Duta Ramadhan\Downloads\llama_3.2_mkp_0.5_top_30.json"
-    db_root_path = r'data\dev\bird\dev_databases\\'
+    predicted_sql_path = r"outputs\inference\llama-3.2-3b\llama_3.2_embedding_bm25_0.5_mkp_top_30.json"
+    db_root_path = r'Dataset\BIRD\dev\dev_databases\dev_databases\\'
     mode_predict = 'gpt'
     data_mode = 'dev'
-    ground_truth_path = r'D:\Kuliah\Skripsi\Kode\data\dev\bird\ground_truth\dev.sql'
+    ground_truth_path = r'Dataset\BIRD\dev\dev.sql'
     meta_time_out = 30.0
     num_cpus = 16
-    diff_json_path = r'data\dev\bird\ground_truth\dev.json'
+    diff_json_path = r'Dataset\BIRD\dev\dev.json'
     output_path = r'results\evaluation\fine_tuned\with_knowledge\finetuned_llama_3_w_knowledge_predict_dev.txt'
     # '''for experiment'''
 
