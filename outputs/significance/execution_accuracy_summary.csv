@@ -1,0 +1,5 @@
+model_id,model,config,config_label,simple_acc,moderate_acc,challenging_acc,total_acc,simple_count,moderate_count,challenging_count,total_count,correct_count
+llama_3_2_3b,LLaMA 3.2 3B Instruct,full_schema,\textit{Full schema},31.891891891891895,16.379310344827587,9.655172413793103,25.097783572359845,925,464,145,1534,385
+llama_3_2_3b,LLaMA 3.2 3B Instruct,hybrid_mkp,\textit{Hybrid retrieval} + MKP,31.351351351351354,18.318965517241377,11.724137931034482,25.554106910039113,925,464,145,1534,392
+gemini_2_5_flash,Gemini 2.5 Flash,full_schema,\textit{Full schema},68.75675675675676,53.01724137931034,51.724137931034484,62.385919165580184,925,464,145,1534,957
+gemini_2_5_flash,Gemini 2.5 Flash,hybrid_mkp,\textit{Hybrid retrieval} + MKP,67.56756756756756,51.724137931034484,49.6551724137931,61.08213820078227,925,464,145,1534,937
